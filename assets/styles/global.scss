@@ -1,0 +1,19 @@
+%nunito {
+    font-family: "Nunito", sans-serif;
+}
+%roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin nunito($size,$line-height,$weight: normal){
+    @extend %nunito;
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+}
+
+@mixin desktop{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
