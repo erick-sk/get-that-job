@@ -1,0 +1,20 @@
+.landing-hero {
+    align-self: center;
+    &-title {
+        @include nunito(46px, 63px, bold);
+        max-width: 360px;
+        margin: 0 0 20px;
+    }
+    &-text {
+        @include nunito(20px, 27px);
+        max-width: 531px;
+    }
+    &-img {
+        max-width: 492px;
+        padding: 122px 0;
+        box-sizing: border-box;
+    }
+    &__btn {
+        padding: 10px 20px;
+    }
+}

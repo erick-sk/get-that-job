@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
-.site-footer-copyright, .site-footer-link, .site-footer-nav-title, .site-header-link, .site-header-title, .btn {
+.landing-hero-text, .landing-hero-title, .site-footer-copyright, .site-footer-link, .site-footer-nav-title, .site-header-link, .site-header-title, .btn {
   font-family: "Nunito", sans-serif;
 }
 
@@ -352,6 +352,9 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+.container--flex {
+  display: flex;
+}
 
 .inline-nav {
   margin: 0 -10px;
@@ -378,11 +381,17 @@ body {
   text-transform: uppercase;
   padding: 5px 10px;
 }
-.btn--outlined {
+.btn--dark--outlined {
   border: 2px solid currentColor;
 }
 .btn--purple {
-  color: #3C2DFF;
+  color: #fff;
+  background: #3c2dff;
+}
+.btn--purple--outlined {
+  background: none;
+  border: 2px solid currentColor;
+  color: #3c2dff;
 }
 
 .site-header {
@@ -467,6 +476,31 @@ body {
   padding: 8px 0;
   border-top: 1px solid rgba(193, 187, 187, 0.77);
   color: #73738d;
+}
+
+.landing-hero {
+  align-self: center;
+}
+.landing-hero-title {
+  font-size: 46px;
+  line-height: 63px;
+  font-weight: bold;
+  max-width: 360px;
+  margin: 0 0 20px;
+}
+.landing-hero-text {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: normal;
+  max-width: 531px;
+}
+.landing-hero-img {
+  max-width: 492px;
+  padding: 122px 0;
+  box-sizing: border-box;
+}
+.landing-hero__btn {
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
