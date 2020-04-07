@@ -41,5 +41,10 @@
             border: 2px solid currentColor;
             color: #3c2dff;
         }
+        &--flat{
+            font-weight: bold;
+            text-transform: none;
+            border-radius: 0;
+        }
     }
 }

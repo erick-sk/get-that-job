@@ -1,0 +1,84 @@
+.container--job-details {
+    padding: 64px 0;
+}
+
+.job-details {
+    max-width: 650px;
+    &-back-link {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #3c2dff;
+        svg {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    }
+    &-title {
+        margin: 0 0 8px;
+    }
+    &-time {
+        line-height: 24px;
+    }
+    &-tags {
+        margin: -2.5px;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+        &-item {
+            display: inline-block;
+            margin: 0 2.5px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #fff;
+            padding: 1px 8px;
+            background: #3c2dff;
+            border-radius: 4px;
+        }
+    }
+    &-description {
+        p {
+            @include nunito(16px, 24px);
+            margin-bottom: 24px;
+        }
+        h2 {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            line-height: 24px;
+            li {
+                margin-bottom: 4px;
+                &::before {
+                    color: #262626;
+                    content: "\2022";
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    &__btn{
+        padding: 8px 50.5px;
+        line-height: 24px;
+    }
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        &-share {
+            display: flex;
+            align-items: center;
+            span{
+                line-height: 24px;
+                margin-right: 12px;
+            }
+            svg{
+                vertical-align: middle;
+            }
+        }
+    }
+}
