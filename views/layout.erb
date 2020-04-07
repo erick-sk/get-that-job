@@ -11,4 +11,16 @@
 <body>
 <%= erb :"components/header" %>
 <%= yield %>
+<script>
+    window.onload = () => {
+      const dget = document.getElementById.bind(document);
+      const toggledClass = 'site-header-nav-menu--toggled';
+      const toggler = dget("menu-toggler");
+      toggler.onclick = function () {
+        const header = dget("header-menu");
+        header.classList.toggle(toggledClass)
+        toggler.classList.toggle('menu-toggler--active')
+      }
+    }
+  </script>
 </body>

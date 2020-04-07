@@ -416,6 +416,8 @@ h2 {
   background: #fff;
   height: 100px;
   display: flex;
+  position: sticky;
+  top: 0;
   align-items: center;
 }
 .site-header-nav {
@@ -424,8 +426,23 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-.site-header-nav-links-wrapper {
+.site-header-nav-menu {
+  display: none;
+  overflow-x: hidden;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: #fff;
+}
+.site-header-nav-menu--toggled {
   display: flex;
+}
+.site-header__links {
+  /* mobile */
+  display: block;
+  text-align: center;
 }
 .site-header-logo-link {
   color: #000;
@@ -446,11 +463,76 @@ h2 {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
+  /* mobile */
+  padding: 8px 0;
+  display: block;
 }
 .site-header__actions {
-  margin-left: 40px;
+  /* mobile */
+  margin: 40px auto;
 }
 
+/* Menu Btn */
+.menu-toggler {
+  text-decoration: none;
+  color: inherit;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  padding: 6px;
+}
+.menu-toggler::before, .menu-toggler::after {
+  content: "";
+  display: block;
+  background: currentColor;
+  height: 4px;
+  margin: 3px 0;
+  border-radius: 4px;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.menu-toggler--active::before {
+  transform-origin: 0 0;
+  transform: rotate(45deg) translate3d(2px, -2px, 0);
+}
+.menu-toggler--active::after {
+  transform-origin: 0 0;
+  transform: rotate(-45deg) translate3d(-2px, 2px, 0);
+}
+.menu-toggler--active .menu-toggler-desc {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.menu-toggler-desc {
+  display: block;
+  height: 4px;
+  background: black;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header-nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+  }
+  .site-header .menu-toggler {
+    display: none;
+  }
+  .site-header__links {
+    display: flex;
+  }
+  .site-header-link {
+    padding: 0;
+    display: inline;
+  }
+  .site-header__actions {
+    margin: 0;
+    margin-left: 40px;
+  }
+}
 .site-footer {
   background: #fff;
 }
