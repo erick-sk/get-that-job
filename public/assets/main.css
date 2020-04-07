@@ -713,5 +713,177 @@ h2 {
     margin-top: 0;
   }
 }
+/** Reset para REMS - 62.5% = 10px de 16px **/
+/* html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+.forgot-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.forgot-form {
+  margin: auto;
+  max-width: 256px;
+}
+
+.forgot-label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.forgot-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+}
+
+.forgot-button {
+  box-sizing: border-box;
+  display: inline-block;
+  background: #3c2dff;
+  border-radius: 4px;
+  width: 100%;
+  color: #e5e5e5;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.login-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.login-form {
+  margin: auto;
+  max-width: 256px;
+}
+
+.login-label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+}
+
+.login-button {
+  display: inline-block;
+  background: #3c2dff;
+  border-radius: 4px;
+  width: 100%;
+  color: #e5e5e5;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px;
+  margin-top: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.login-forgot {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #3c2dff;
+}
+
+.recovery-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.recovery-subtitle {
+  text-align: center;
+  font-size: 16px;
+}
+
+.singup-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.singup-form {
+  margin: auto;
+  max-width: 256px;
+}
+
+.singup-label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.singup-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+}
+
+.singup-button {
+  display: inline-block;
+  background: #3c2dff;
+  border-radius: 4px;
+  width: 100%;
+  color: #e5e5e5;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 14px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.singup-forgot {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #3c2dff;
+}
 
 /*# sourceMappingURL=main.css.map */
