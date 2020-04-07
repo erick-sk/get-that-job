@@ -1,110 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
-.site-header-link, .site-header-title, .btn {
+.site-footer-copyright, .site-footer-link, .site-footer-nav-title, .site-header-link, .site-header-title, .btn {
   font-family: "Nunito", sans-serif;
 }
 
-/* %nunito-12_20 {
-    @extend %nunito;
-    font-size: 12px;
-    line-height: 20;
-}
-
-%nunito-14_22 {
-    @extend %nunito;
-    font-size: 14px;
-    line-height: 20;
-}
-
-%nunito-16_24 {
-    @extend %nunito;
-    font-size: 16px;
-    line-height: 24;
-}
-
-%nunito-20_28 {
-    @extend %nunito;
-    font-size: 12px;
-    line-height: 20;
-}
-
-%nunito-30_38 {
-    @extend %nunito;
-    font-size: 12px;
-    line-height: 20;
-}
-
-%roboto-38-46 {
-    @extend %roboto;
-    font-size: 38px;
-    line-height: 46px;
-}
-
-%roboto-46-54 {
-    @extend %roboto;
-    font-size: 46px;
-    line-height: 54px;
-}
-%roboto-56-64 {
-    @extend %roboto;
-    font-size: 56px;
-    line-height: 64px;
-}
-%roboto-500-12-20 {
-    @extend %roboto;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 500;
-}
-%roboto-500-14-22 {
-    @extend %roboto;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 500;
-}
-%roboto-500-16-24 {
-    @extend %roboto;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-}
-%roboto-500-20-28 {
-    @extend %roboto;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 500;
-}
-%nunito-600-24-32 {
-    @extend %nunito;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
-}
-%roboto-500-30-38 {
-    @extend %roboto;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 500;
-}
-%roboto-500-38-46 {
-    @extend %roboto;
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 500;
-}
-%roboto-500-46-54 {
-    @extend %roboto;
-    font-size: 46px;
-    line-height: 54px;
-    font-weight: 500;
-}
-%roboto-500-56-64 {
-    @extend %roboto;
-    font-size: 56px;
-    line-height: 64px;
-    font-weight: 500;
-}
- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -523,6 +422,51 @@ body {
 }
 .site-header__actions {
   margin-left: 40px;
+}
+
+.site-footer {
+  background: #fff;
+}
+.site-footer--container {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0 29px;
+}
+.site-footer-nav-title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.site-footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-footer-links-item {
+  display: block;
+  padding: 4px 0;
+}
+.site-footer-link {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.site-footer-link--last {
+  color: #ad00ff;
+}
+.site-footer-copyright {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  border-top: 1px solid rgba(193, 187, 187, 0.77);
+  color: #73738d;
 }
 
 /*# sourceMappingURL=main.css.map */

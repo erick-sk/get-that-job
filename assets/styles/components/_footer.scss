@@ -1,0 +1,38 @@
+.site-footer {
+    background: #fff;
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        padding: 21px 0 29px;
+    }
+    &-nav-title {
+        @include nunito(18px, 25px);
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    &-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &-item {
+            display: block;
+            padding: 4px 0;
+        }
+    }
+    &-link {
+        @include nunito(14px, 19px);
+        text-decoration: none;
+        color: #7a7a7a;
+        &--last {
+            color: #ad00ff;
+        }
+    }
+    &-copyright {
+        @include nunito(14px, 19px);
+        text-align: center;
+        margin: 0;
+        padding: 8px 0;
+        border-top: 1px solid rgba(193, 187, 187, 0.77);
+        color: #73738d;
+    }
+}
