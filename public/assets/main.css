@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
-.landing-hero-text, .landing-hero-title, .site-footer-copyright, .site-footer-link, .site-footer-nav-title, .site-header-link, .site-header-title, .btn {
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Overpass:400&display=swap");
+.job-details-description p, .job-details-logo-name, .landing-hero-text, .landing-hero-title, .site-footer-copyright, .site-footer-link, .site-footer-nav-title, .site-header-link, .site-header-title, .btn, h2, h1 {
   font-family: "Nunito", sans-serif;
 }
 
@@ -343,9 +343,22 @@ template {
   display: none;
 }
 
+/* These repeat throughout the entire website */
 body {
   font-family: "Nunito";
   background: #F7FAFC;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .container {
@@ -392,6 +405,11 @@ body {
   background: none;
   border: 2px solid currentColor;
   color: #3c2dff;
+}
+.btn--purple--flat {
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 0;
 }
 
 .site-header {
@@ -539,6 +557,160 @@ body {
     order: 0;
     max-width: 492px;
     padding: 122px 0;
+  }
+}
+.container--job-details {
+  padding: 32px 0;
+}
+
+.job-details {
+  max-width: 650px;
+}
+.job-details-company-card {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 250px;
+  width: 250px;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 32px;
+  margin: 0 auto 32px;
+  line-height: 24px;
+  text-align: center;
+}
+.job-details-company-info {
+  padding: 40px 0;
+}
+.job-details-company-info svg {
+  vertical-align: sub;
+}
+.job-details-company-website {
+  color: inherit;
+}
+.job-details-company-data {
+  margin: 0;
+  padding: 0px 0;
+  list-style-type: none;
+}
+.job-details-company-jobs-link {
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.job-details-company-jobs-link svg {
+  vertical-align: bottom;
+  margin-left: 8px;
+}
+.job-details-logo-img {
+  max-width: 50px;
+}
+.job-details-logo-name {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold;
+  margin: 0;
+}
+.job-details-card-divider {
+  width: 100%;
+  margin: 16px 0;
+}
+.job-details-back-link {
+  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #3c2dff;
+}
+.job-details-back-link svg {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.job-details-title {
+  margin: 0 0 8px;
+}
+.job-details-time {
+  line-height: 24px;
+}
+.job-details-tags {
+  margin: -2.5px;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+.job-details-tags-item {
+  display: inline-block;
+  margin: 0 2.5px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  padding: 1px 8px;
+  background: #3c2dff;
+  border-radius: 4px;
+}
+.job-details-description p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+.job-details-description h2 {
+  margin-bottom: 12px;
+}
+.job-details-description ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 24px;
+}
+.job-details-description ul li {
+  margin-bottom: 4px;
+}
+.job-details-description ul li::before {
+  color: #262626;
+  content: "•";
+  margin-right: 12px;
+}
+.job-details__btn {
+  padding: 8px 50.5px;
+  line-height: 24px;
+}
+.job-details-footer {
+  display: block;
+  justify-content: space-between;
+}
+.job-details-footer-share {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+}
+.job-details-footer-share span {
+  line-height: 24px;
+  margin-right: 12px;
+}
+.job-details-footer-share svg {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .container--job-details {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .job-details-company-card {
+    margin: 0;
+    align-self: flex-start;
+    order: 1;
+  }
+  .job-details-footer {
+    display: flex;
+  }
+  .job-details-footer-share {
+    margin-top: 0;
   }
 }
 

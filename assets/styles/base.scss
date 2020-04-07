@@ -1,8 +1,16 @@
 @import 'normalize';
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Overpass:400&display=swap');
 
+/* These repeat throughout the entire website */
 body{
     font-family: 'Nunito';
     background: #F7FAFC;
+}
+
+h1{
+    @include nunito(32px,44px,bold);
+}
+
+h2{
+    @include nunito(24px,24px,bold);
 }
