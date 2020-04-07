@@ -1,20 +1,47 @@
+.container--hero {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 0;
+}
 .landing-hero {
     align-self: center;
     &-title {
         @include nunito(46px, 63px, bold);
-        max-width: 360px;
         margin: 0 0 20px;
     }
     &-text {
         @include nunito(20px, 27px);
-        max-width: 531px;
     }
     &-img {
-        max-width: 492px;
-        padding: 122px 0;
+        order: -1;
+        align-self: flex-start;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 66px 0;
         box-sizing: border-box;
     }
     &__btn {
         padding: 10px 20px;
+    }
+}
+
+@include desktop() {
+    .container--hero {
+        flex-direction: row;
+        padding: 0;
+    }
+    .landing-hero {
+        align-self: center;
+        &-title {
+            max-width: 360px;
+        }
+        &-text {
+            max-width: 531px;
+        }
+        &-img {
+            order: 0;
+            max-width: 492px;
+            padding: 122px 0;
+        }
     }
 }

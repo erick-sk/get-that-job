@@ -1,8 +1,8 @@
 .site-footer {
     background: #fff;
     &--container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid: auto-flow / 1fr 1fr;
         padding: 21px 0 29px;
     }
     &-nav-title {
@@ -13,6 +13,7 @@
     &-links {
         list-style-type: none;
         margin: 0;
+        margin-bottom: 2rem;
         padding: 0;
         &-item {
             display: block;
@@ -34,5 +35,17 @@
         padding: 8px 0;
         border-top: 1px solid rgba(193, 187, 187, 0.77);
         color: #73738d;
+    }
+}
+
+@include desktop {
+    .site-footer {
+        &--container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-links {
+            margin: 0;
+        }
     }
 }
