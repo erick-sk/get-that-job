@@ -1,21 +1,25 @@
 .get-in-touch{
     background-color:  #F7FAFC;
     display:grid;
-    grid-template-columns: 1fr 35% 35% 1fr;
+    grid-template-columns: 1fr 35% 35%  1fr;
+    grid-template-rows:70% 30%;
     padding-top:5%;
     padding-bottom:5%;
+    max-width: 100%;
+    
 }
 .get-in-touch-right-side{
     grid-column-start:3;
-    grid-row-start: 1;
+    grid-row: 1/3;
+}
+.g-top{
+    grid-column-start:2 ;
+    grid-row: 1/2;
 
 }
-.get-in-touch-left-side{
-    grid-column-start:2;
-    grid-row-start: 1;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+.g-bottom{
+    grid-column-start:2 ;
+    grid-row: 2/3;
 
 }
 .get-in-btn{
@@ -30,17 +34,18 @@
 }
 .g-envelope{
     margin-right: 10px;
+    color:white;
 }
 .g-input{
     border: 1px solid #C9CCD4;
     box-sizing: border-box;
     border-radius: 6px;
     height: 60px;
-    width:81%;
+    width:100%;
 }
 .g-textarea{
     resize: none;
-    width:80%;
+    width:99%;
     height: 120px;
     border: 1px solid #C9CCD4;
     border-radius: 6px;
@@ -104,3 +109,25 @@
     font-size: 13px;
     line-height: 10px;
 }
+@media only screen 
+  and (max-device-width: 768px){
+      .get-in-touch{
+          display:flex;
+          flex-direction: column;    
+          padding:5%;
+          width: 100%;
+          box-sizing: border-box;
+          
+      }
+      .g-top{
+          justify-self:flex-start ;
+      }
+      form{
+        justify-self:center;
+      }
+      .g-bottom{
+          justify-self: flex-end;
+      }
+    
+
+  }
