@@ -1,22 +1,25 @@
-.container{
+.container {
     max-width: 1024px;
     margin: 0 auto;
+    &--flex {
+        display: flex;
+    }
 }
 
-.inline-nav{
+.inline-nav {
     margin: 0 -10px;
     padding: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
-    &-item{
+    &-item {
         display: block;
         margin: 0 10px;
     }
 }
 
-.btn{
-    @include nunito(13px,18px,800);
+.btn {
+    @include nunito(13px, 18px, 800);
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -25,10 +28,18 @@
     color: black;
     text-transform: uppercase;
     padding: 5px 10px;
-    &--outlined{
-        border: 2px solid currentColor;
+    &--dark {
+        &--outlined {
+            border: 2px solid currentColor;
+        }
     }
-    &--purple{
-        color: #3C2DFF;
+    &--purple {
+        color: #fff;
+        background: #3c2dff;
+        &--outlined {
+            background: none;
+            border: 2px solid currentColor;
+            color: #3c2dff;
+        }
     }
 }
