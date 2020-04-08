@@ -1,0 +1,17 @@
+.faq {
+    &-title {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &-question {
+        @include nunito(24px, 32px, 600);
+        color: #262626;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &-answer {
+        @include nunito(20px, 28px);
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
