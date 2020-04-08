@@ -422,6 +422,7 @@ h2 {
   position: sticky;
   top: 0;
   align-items: center;
+  z-index:99;
 }
 .site-header-nav {
   display: flex;
