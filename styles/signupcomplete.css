@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #e5e5e5;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #8c8c8c;
+  margin-top: 0;
+}
+
+textarea::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #8c8c8c;
+}
+
+/* FIN GLOBALES */
+
+.signupcomplete-title {
+  margin: 100px 0 20px 208px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.signupcomplete-form {
+  margin: 0 0 0 208px;
+  max-width: 400px;
+}
+
+.signupcomplete-label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.signupcomplete-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 0 5px 0;
+  font-size: 15px;
+}
+
+form .boxtext {
+  height: 127px;
+}
+
+.bt-create {
+  display: inline-block;
+  background: #ffffff;
+  width: 143px;
+  border: 1px solid #3c2dff;
+  box-sizing: border-box;
+  color: #3c2dff;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.login-forgot {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #3c2dff;
+}
+
+label {
+  font-size: 14px;
+}
+
+.signup-radio {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #595959;
+}
+
+.checkbox-main {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #595959;
+}
+
+.checkbox-signup {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .signupcomplete-title {
+    margin: 100px 0 20px 50px;
+  }
+
+  .signupcomplete-form {
+    margin: 0 0 0 50px;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete your Signup</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/signupcomplete.css" />
+  </head>
+  <body>
+    <h1 class="signupcomplete-title">Complete your signup</h1>
+
+    <form action="" class="signupcomplete-form">
+      <label for="name" class="signupcomplete-label"> Nombre</label>
+      <input
+        type="text"
+        class="signupcomplete-input"
+        name="name"
+        id="name"
+        placeholder="Large Input"
+        required
+      />
+      <p>Use your real first and last name</p>
+
+      <label for="pf-dscp" class="signupcomplete-label"
+        >Professional Description</label
+      >
+      <input
+        type="text"
+        class="signupcomplete-input"
+        name="pf-dscp"
+        id="pf-dscp"
+        placeholder="e.g Software Engineer, Mememaster, Pokemaster "
+        required
+      />
+      <p>Short an specific text about what you do</p>
+
+      <label for="wk-exp" class="signupcomplete-label">Work Experience</label>
+      <textarea
+        name="wk-exp"
+        id="wk-exp"
+        class="signupcomplete-input boxtext"
+        placeholder="Worked 6 years in a bitcoin farm until I decided to change my life.... "
+        required
+      ></textarea>
+
+      <p>
+        Tells us about your work experience, what did you do before joining this
+        top community?
+      </p>
+      <label for="tell-joke" class="signupcomplete-label">Tell us a joke</label>
+      <textarea
+        class="signupcomplete-input boxtext"
+        name="tell-joke"
+        id="tell-joke"
+        placeholder="Q: Why do chemists enjoy working with ammonia?&#10;A: Because it's pretty basic stuff. "
+        required
+      ></textarea>
+
+      <p>
+        Tells us about your work experience, what did you do before joining this
+        top community?
+      </p>
+
+      <label for="wk-type" class="signupcomplete-label"
+        >Work type preference</label
+      >
+      <br />
+      <div class="signup-radio">
+        <input type="radio" id="full-time" name="wk-type" value="full-time" />
+        <label for="full-time">Full-time</label>
+        <input type="radio" id="part-time" name="wk-type" value="part-time" />
+        <label for="part-time">Part-time</label>
+        <input type="radio" id="contract" name="wk-type" value="contract" />
+        <label for="contract">Contract</label>
+        <input type="radio" id="for-free" name="wk-type" value="for-free" />
+        <label for="for-free">For Free</label>
+      </div>
+
+      <br />
+
+      <div class="checkbox-main">
+        <div>
+          <input
+            type="checkbox"
+            id="wish-regular"
+            name="wish-data"
+            value="wish-data"
+          />
+          <label for="wish-regular"
+            >I wish to receive regular dad jokes in my email
+          </label>
+        </div>
+
+        <div class="checkbox-signup">
+          <input
+            type="checkbox"
+            id="wish-all"
+            name="wish-data"
+            value="wish-data"
+          />
+          <label for="wish-all"
+            >I wish that you sell my data and give me nothing in exchange</label
+          >
+        </div>
+      </div>
+
+      <br />
+      <a href="#" class="bt-create">Create Account</a>
+    </form>
+  </body>
+</html>
