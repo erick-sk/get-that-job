@@ -1,0 +1,75 @@
+.testimonial-2{
+    display:grid;
+    grid-template-columns: 1fr 75% 1fr;
+    padding-top:5%;
+    padding-bottom:5%;
+    background-color: #ffffff;
+    
+}
+.t-left-arrow{
+    grid-column-start:1;
+    place-self: center end;
+    
+}
+
+.t-experience{
+    grid-column-start:2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    place-self: center;
+    width: 80%;
+}
+.t-right-arrow{
+    grid-column-start:3;
+    place-self: center start;
+
+}
+.t-title{
+    font-family: 'Overpass', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+.t-author{
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+.t-job{
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+
+}
+@media only screen 
+and (max-device-width: 768px){
+    .testimonial-2{
+        box-sizing: border-box;
+    }
+
+    .t-title{
+        font-family: 'Overpass', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .t-author{
+        font-family: 'Overpass', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        font-weight: normal;
+    }
+    .t-job{
+        font-family: 'Overpass', sans-serif;
+        font-size: 8px;
+        text-align: center;
+        font-weight: normal;
+    
+    }
+}
+
+
+
