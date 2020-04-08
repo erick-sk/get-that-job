@@ -31,6 +31,13 @@ textarea::placeholder {
   color: #8c8c8c;
 }
 
+input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #8c8c8c;
+}
+
 /* FIN GLOBALES */
 
 .signupcomplete-title {
