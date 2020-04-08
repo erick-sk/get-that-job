@@ -3,18 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title><%= " GetThatJob" %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/assets/job-description.css">
-  <script src="https://kit.fontawesome.com/528c41e6c1.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/528c41e6c1.js" crossorigin="anonymous" async defer></script>
+  <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/get-in-touch.css">
   <link rel="stylesheet" href="/assets/testimonial2.css">
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/job-description.css">
 </head>
 <body>
 <%= erb :"components/header" %>
 <%= yield %>
+<script>
+    window.onload = () => {
+      const dget = document.getElementById.bind(document);
+      const toggledClass = 'site-header-nav-menu--toggled';
+      const toggler = dget("menu-toggler");
+      toggler.onclick = function () {
+        const header = dget("header-menu");
+        header.classList.toggle(toggledClass)
+        toggler.classList.toggle('menu-toggler--active')
+      }
+    }
+  </script>
 </body>
