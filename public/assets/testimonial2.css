@@ -1,10 +1,10 @@
 .testimonial-2{
     display:grid;
     grid-template-columns: 1fr 75% 1fr;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top:5%;
+    padding-bottom:5%;
     background-color: #ffffff;
-    height: 428px;
+    
 }
 .t-left-arrow{
     grid-column-start:1;
