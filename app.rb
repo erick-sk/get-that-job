@@ -4,6 +4,8 @@ titles = {
   "jobdetails" => "Software Engineer | Able.co",
   "signup" => "Sign up",
   "login" => "Login",
+  "faq" => "FAQ",
+  "jobs" => "Jobs",
   "password-recovery" => "Forgot Password",
   "password-recovery-sent" => "Password Recovery"
 }
