@@ -30,6 +30,7 @@
     margin-top: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
+    
     background: #FFFFFF;
 }
 
@@ -76,7 +77,7 @@
 
 }
 .today-2{
-    min-width: 80%;
+    min-width: 60%;
     max-width: 100%;
     display:flex;
     justify-content: space-around;
@@ -84,6 +85,7 @@
     font-weight: 300;
     font-size: 14px;
     color: #718096;
+    padding-right:5%;
 
 }
 .j-title{
@@ -207,6 +209,7 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 28px;
+    
 
 }
 
@@ -227,25 +230,15 @@
 }
 
 .dropdown-content{
-    position: absolute;
+    position:absolute;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    z-index:2;
     width: 100%;
+    z-index:2;
     display: none;
     margin-top:4px;   
 }
-
-
-
-
-  
-
-
-
-
-
 
 .react-2{
     padding:5px 7px;
@@ -303,16 +296,17 @@
         background-color: transparent;
         height:20px;
         border: none;
-        width: 100%;
+        width: 50%;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
         font-size: 13px;
         line-height: 18px;
         color: #4A5568;
+
     }
        .today-2{
-        width: 100%;
+        width: 80%;
         display:flex;
         justify-content: space-around;
         font-family: 'Nunito', sans-serif;
@@ -322,7 +316,7 @@
         display: flex;
         flex-wrap:wrap;
         align-items: center;
-        max-width: 100%;
+        max-width: 90%;
     
     }
     .react-2{
