@@ -3,11 +3,12 @@ require "sinatra"
 titles = {
   "jobdetails" => "Software Engineer | Able.co",
   "signup" => "Sign up",
+  "signup-complete" => "Complete your Signup",
   "login" => "Login",
   "faq" => "FAQ",
   "jobs" => "Jobs",
   "password-recovery" => "Forgot Password",
-  "password-recovery-sent" => "Password Recovery"
+  "password-recovery-sent" => "Forgot password success"
 }
 
 get "/:page?" do
