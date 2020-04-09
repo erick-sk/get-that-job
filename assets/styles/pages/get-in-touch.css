@@ -1,24 +1,30 @@
 .get-in-touch {
     background-color: #f7fafc;
     display: grid;
-    grid-template-columns: 1fr 35% 35% 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 70% 30%;
     max-width: 100%;
     padding-top: 7%;
     padding-bottom: 12%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
+
 .get-in-touch-right-side {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row: 1/3;
 }
+
 .g-top {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row: 1/2;
 }
+
 .g-bottom {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row: 2/3;
 }
+
 .get-in-btn {
     font-family: "Overpass", sans-serif;
     font-weight: bold;

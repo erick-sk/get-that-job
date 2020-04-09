@@ -1,16 +1,21 @@
+.job-description-container {
+    background-color: #3c2dff;
+}
 .job-description {
     background-color: #3c2dff;
     display: grid;
-    grid-template-columns: 1fr 35% 35% 1fr;
+    grid-template-columns: 50% 50%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
+
 .job-description-left-side {
-    grid-column-start: 2;
+    grid-column-start: 1;
     place-self: center;
 }
+
 .job-description-right-side {
-    grid-column-start: 3;
+    grid-column-start: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
