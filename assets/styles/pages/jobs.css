@@ -19,6 +19,7 @@
     width: 100%;
 }
 .job-box {
+    text-decoration: none;
     display: grid;
     grid-template-columns: 10% 40% 50%;
     border: none;

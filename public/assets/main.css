@@ -1063,7 +1063,7 @@ h2 {
   }
 }
 .container--job-details {
-  padding: 32px 0;
+  padding: 32px 5%;
 }
 
 .job-details {
@@ -1164,6 +1164,7 @@ h2 {
 }
 .job-details-description ul {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style-type: none;
   line-height: 24px;
@@ -1240,6 +1241,7 @@ h2 {
 }
 
 .job-box {
+  text-decoration: none;
   display: grid;
   grid-template-columns: 10% 40% 50%;
   border: none;
