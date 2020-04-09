@@ -3,7 +3,7 @@
     &--container {
         display: grid;
         grid: auto-flow / 1fr 1fr;
-        padding: 21px 0 29px;
+        padding: 21px 5% 29px;
     }
     &-nav-title {
         @include nunito(18px, 25px);
@@ -43,6 +43,8 @@
         &--container {
             display: flex;
             justify-content: space-between;
+            padding-left: 0;
+            padding-right: 0;
         }
         &-links {
             margin: 0;
